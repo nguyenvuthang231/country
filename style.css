@@ -4,10 +4,6 @@
   background-size: 100% 100%;
 }
 
-a{
-	display :block;
-}
-
 @media screen and (max-width: 992px) {
   .top-banner__left>.text>.title {
     font-size: 17px !important;
@@ -31,14 +27,37 @@ a{
 
 }
 
+.image-logo-footer {
+  margin-left: 25px;
+}
+
 @media screen and (max-width: 600px) {
-  /* .logo-hop-tac {
-    position: absolute;
-    bottom: 50px;
-  } */
   .logo-hop-tac > img {
-    width: 40px !important;
+    width: 50px !important;
   }
+
+  .image-logo-footer {
+    margin-left: 10px !important;
+  }
+}
+
+.logo-en {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logo-vn {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-language>img {
+  width: 40px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -73,7 +92,7 @@ a{
 
 .top-banner__left>.text>.title {
   font-weight: bold;
-  font-size: 38px;
+  font-size: 28px;
 }
 
 .top-banner__left>.text>.text-description {
@@ -137,8 +156,6 @@ a{
 
 .timber-transport {
   width: 100%;
-  /* background: #0a78b4; */
-  /* background: #28a745; */
   background: linear-gradient(90deg, #0a78b4 0.67%, #28a745 100%);
   border-radius: 10px;
   cursor: pointer;
@@ -191,11 +208,12 @@ a{
 }
 
 .logo-hop-tac {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  text-align: center;
+  justify-content: flex-start;
   margin-top: 30px;
 }
 
 .logo-hop-tac>img {
-  width: 120px;
+  width: 85px;
 }

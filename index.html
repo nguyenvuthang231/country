@@ -91,6 +91,44 @@
         padding: 10px;
       }
     }
+	.wrap-expand {
+		display: flex; 
+		padding: 0 10px; 
+		margin-top: 20px;
+	}
+	
+	@media screen and (max-width: 940px) {
+		.wrap-expand {
+			display: flex; 
+			flex-direction: column;
+			padding: 0 10px; 
+			margin-top: 20px;
+		}
+	}
+	
+	.expand {
+		width: 49%; 
+		text-align: center;
+	}
+	
+	@media only screen and (max-width: 600px) {
+		.expand {
+			width: 100%; 
+			text-align: center;
+		}
+	
+	}
+	
+	.expand2{
+		width: 49%; text-align: center; margin-left: 1%;
+	}
+	
+	@media only screen and (max-width: 600px) {
+		.expand2{
+			width: 100%; text-align: center; margin-left: 0%;
+		}
+	}
+
   </style>
   <!-- Resources -->
   <meta charset="utf-8">
@@ -154,8 +192,8 @@
       </div>
     </div>
     <div id="chartdiv"></div>
-    <div style="display: flex; padding: 0 10px; margin-top: 20px;">
-      <div style="width: 49%; text-align: center;">
+    <div class="wrap-expand">
+      <div class = "expand">
         <div data-toggle="collapse" data-target="#collapse_1">
           <p class="content-collapse-title">Bản quyền</p>
         </div>
@@ -169,7 +207,7 @@
             quyền, ngay cả khi bạn...</p>
         </div>
       </div>
-      <div style="width: 49%; text-align: center; margin-left: 1%;">
+      <div style="" class = "expand2">
         <div data-toggle="collapse" data-target="#collapse_2">
           <p class="content-collapse-title">Tuyên bố miễn trừ trách nhiệm</p>
         </div>

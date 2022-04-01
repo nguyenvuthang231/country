@@ -17,7 +17,13 @@
   <script>
     function changeLanguage(language) {
       localStorage.setItem("language", language);
-      window.location.reload();
+	  var url = window.location.href;
+	  if(language === 'vn'){
+		window.location.href=url.replace('en.html','vn.html');
+	  } else {
+		window.location.href=url.replace('vn.html','en.html');
+	  }
+      //window.location.reload();
     }
   </script>
 </head>
@@ -391,11 +397,11 @@
             <div class="footer-title">
               Để biết thêm thông tin về Quy định pháp luật của gỗ từ Angola, vui lòng truy cập:
             </div>
-            <div style="font-size: 13px;">
-              <p>
+            <div style="font-size: 13px;" class="tag-a">
+              <a href="https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project">
                 https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project
-              </p>
-              <p>https://timberlex.apps.fao.org/</p>
+              </a>
+              <a href="https://timberlex.apps.fao.org/">https://timberlex.apps.fao.org/</a>
             </div>
           </div>
         </div>

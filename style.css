@@ -92,7 +92,7 @@
 
 .top-banner__left>.text>.title {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 .top-banner__left>.text>.text-description {
@@ -102,7 +102,8 @@
 
 .top-banner__right {
   width: 25%;
-  background: #6c6d70;
+  /* background: #6c6d70; */
+  background: linear-gradient(90deg, #0a78b4 0.67%, #28a745 100%);
   border-bottom-right-radius: 8px;
   display: flex;
   align-items: center;

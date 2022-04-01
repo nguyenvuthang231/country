@@ -17,7 +17,13 @@
   <script>
     function changeLanguage(language) {
       localStorage.setItem("language", language);
-      window.location.reload();
+	  var url = window.location.href;
+	  if(language === 'vn'){
+		window.location.href=url.replace('en.html','vn.html');
+	  } else {
+		window.location.href=url.replace('vn.html','en.html');
+	  }
+      //window.location.reload();
     }
   </script>
 </head>
@@ -444,15 +450,15 @@
             <div class="footer-title">
               For more information on Timber Legality Requirements from Republic of Congo:
             </div>
-            <div style="font-size: 13px;">
-              <p>
+            <div style="font-size: 13px;" class="tag-a">
+              <a href="https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project">
                 https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project
-              </p>
-              <p>https://timberlex.apps.fao.org/</p>
+              </a>
+              <a href="https://timberlex.apps.fao.org/">https://timberlex.apps.fao.org/</a>
               <div class="footer-title">
                 Voluntary Partnership Agreement between the European Union and Republic of Congo:
               </div>
-              <p>https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(03)&from=EN</p>
+              <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(03)&from=EN">https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(03)&from=EN</a>
             </div>
           </div>
         </div>
